@@ -7,12 +7,14 @@
   </head>
   <body class="w-100% font-familly">
     <div class="">
-      <div class="bg-gradient-to-t from-[#FFF4DF] to-[#A8D3FF] flex flex-col items-center gap-8 relative lg:h-[750px] w-full px-4">
+      <div
+        class="bg-gradient-to-t from-[#FFF4DF] to-[#A8D3FF] flex flex-col items-center gap-8 relative h-[600px] md:h-[700px] lg:h-[750px] w-full px-4"
+      >
         <nav id="mainNav" class="flex items-center justify-between py-4 px-4 w-full">
           <div>
             <img src="./asset/Logo.png" alt="" />
           </div>
-          <button onclick="toggleMenu()" class="lg:hidden text-3xl">&#9776;</button>
+          <button onclick="toggleMenu()" class="lg:hidden md:hidden text-3xl">&#9776;</button>
           <div class="lg:flex md:flex gap-4 hidden">
             <a href="">Product</a>
             <a href="">Journal</a>
@@ -59,12 +61,12 @@
         <!-- <div>
           <img src="asset/Ellipse 38140-2.png" alt="" />
         </div> -->
-        <div class="absolute bottom-[-18rem] lg:w-[960px] lg:h-[608px]">
+        <div class="absolute w-[335px] md:w-[760px] md:h-[481px] bottom-[-7rem] md:bottom-[-18rem] lg:w-[960px] lg:h-[608px]">
           <img src="./asset/Hero-image.png" alt="" />
         </div>
       </div>
 
-      <div class="flex flex-col items-center px-2 lg:py-25 py-10 md:py-10 gap-8 w-full lg:mt-60">
+      <div class="flex flex-col items-center px-2 lg:py-25 py-10 md:py-10 gap-8 w-full mt-28 md:mt-75 lg:mt-60">
         <h1 class="md:font-normal font-medium text-[24px] md:text-[40px] text-center leading-none lg:px-70">
           Everything you need to measure, model, and act on sustainability
         </h1>
@@ -72,7 +74,7 @@
         <div class="flex flex-col lg:flex-row md:flex-col gap-6 w-full">
           <img src="./asset/Image-1.png" alt="" class="lg:w-[693px]" />
 
-          <div class="flex flex-col lg:h-[502px] justify-between lg:w-[507px]">
+          <div class="flex flex-col lg:h-[502px] md:mt-2 justify-between lg:w-[507px]">
             <div class="border-t w-full pt-6">
               <h1 class="font-medium text-[20px]">Tack</h1>
               <p class="font-normal font-dm text-[20px]">Emissions, energy, and waste across your value chain</p>
@@ -99,7 +101,7 @@
       </div>
 
       <div class="bg-orange-200 flex flex-col gap-8 items-center w-full px-4 py-10 lg:py-25 md:py-15">
-        <h2 class="font-normal text-[36px] md:text-[80px] text-center lg:px-60 font-dm leading-none">
+        <h2 class="font-normal text-[36px] md:text-[80px] text-center md:w-[760px] lg:w-[1240px] lg:px-60 font-dm leading-none">
           Built for clarity <span class="font-familly">Designed for action</span>
         </h2>
 
@@ -151,25 +153,29 @@
       </div>
 
       <div class="flex items-center justify-center w-full relative">
-        <img src="./asset/Sticker-container.png" alt="" class="absolute top-[-2.5rem] left-10" />
-        <div class="flex flex-col items-center lg:w-[620px] w-full">
+        <img
+          src="./asset/Sticker-container.png"
+          alt=""
+          class="absolute md:flex md:top-[-2.5rem] md:left-[-8rem] lg:top-[-2.5rem] lg:left-10 hidden"
+        />
+        <div class="flex flex-col items-center px-2 lg:w-[620px] w-full">
           <p class="font-medium text-[40px]">From the journal</p>
-          <div class="flex flex-col gap-2 lg:mt-6">
-            <div class="flex flex-row border-t py-4 gap-8">
+          <div class="flex flex-col gap-2 mt-4 lg:mt-6 md:w-[620px] w-full md:mt-5">
+            <div class="flex flex-col md:flex-row border-t py-5 gap-8">
               <img src="./asset/img.1.png" alt="" />
               <div>
                 <h1 class="font-semibold text-[20px] lg:w-[439px] leading-none">How to Build a climate-Ready Data Stack</h1>
                 <p>insights . 4 min</p>
               </div>
             </div>
-            <div class="flex flex-row border-t py-4 gap-8">
+            <div class="flex flex-col md:flex-row border-t py-5 gap-8">
               <img src="./asset/img.1.png" alt="" />
               <div>
                 <h1 class="font-semibold text-[20px] lg:w-[439px] leading-none">sustainability Isn't a Side Project: Making Impact operational</h1>
                 <p>strategy . 7 min</p>
               </div>
             </div>
-            <div class="flex flex-row border-t py-4 gap-8 border-b">
+            <div class="flex flex-col md:flex-row border-t py-5 gap-8 border-b">
               <img src="./asset/img.1.png" alt="" />
               <div>
                 <h1 class="font-semibold text-[20px] lg:w-[439px] leading-none">Inside the Aetherfield Model: How We Turn Data Into Action</h1>
@@ -177,7 +183,7 @@
               </div>
             </div>
           </div>
-          <button class="bg-black text-white md:w-[167px] h-[38px] mt-4">View all articles</button>
+          <button class="bg-black text-white w-full md:w-[167px] h-[38px] mt-4">View all articles</button>
         </div>
       </div>
     </div>

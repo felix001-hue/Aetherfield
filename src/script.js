@@ -9,6 +9,7 @@ function toggleMenu() {
 
 function closeMenu() {
   mobileMenu.classList.add("translate-x-full");
+
   //   mainNav.classList.remove("hidden");
   //   mobileMenu.classList.add("hidden");
 }
